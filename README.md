@@ -1,7 +1,10 @@
 ## Activation Maximization Generative Adversarial Nets
 
-This is a repository of the experiment code supporting the paper **Activation Maximization Generative Adversarial Nets**.
+This is a repository of the reproducible experiment code supporting the paper **Activation Maximization Generative Adversarial Nets**. We also provide a light weight implimentation of AM-GAN [here](https://github.com/ZhimingZhou/AM-GAN-clean-version).
 
+In "Activation Maximization Generative Adversarial Nets", we study how class labels influence GANs' training and proposed a advance method for better usage of class labels. It significantly outperforms the baseline methods, such as AC-GAN, improved GAN and CatGAN.
+
+---
 Note that the code is written in python 2.7 with tensorflow 1.2.0, please check your environment before running the code. (DO NOT use higher version tensorflow, such as 1.3, 1.4, 1.5; it currently has trouble with data dependent initialization that we used in the code for Weight Normalization) 
 
 You may also need to install Pillow, scipy, matplotlib.
