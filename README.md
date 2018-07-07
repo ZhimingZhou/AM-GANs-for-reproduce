@@ -5,11 +5,8 @@ This is a repository of the reproducible experiment code supporting the paper **
 In the paper, we thoroughly study how class labels influence GANs' training and proposed an advance method for better usage of class labels with theoretical insight. According to our experiments, the proposed method AM-GAN significantly outperforms the baseline methods including [AC-GAN](https://arxiv.org/abs/1610.09585), [Improved GAN](https://arxiv.org/abs/1606.03498) and [CatGAN](https://arxiv.org/abs/1511.06390).
 
 ---
-Note that the code is written in python 2.7 with tensorflow 1.2.0, please check your environment before running the code. (DO NOT use higher version tensorflow, such as 1.3, 1.4, 1.5; it currently has trouble with data dependent initialization that we used in the code for Weight Normalization) 
+Note that the code is written in python 2.7 with tensorflow 1.2.0, please check your environment before running the code. (DO NOT use higher version tensorflow, such as 1.3, 1.4, 1.5; it currently has trouble with data dependent initialization that we used in the code for Weight Normalization). You may also need to install Pillow, scipy, matplotlib.
 
-You may also need to install Pillow, scipy, matplotlib.
-
----
 "CD" to the "code" folder, and run the code with command line:
 
     For AM-GAN:
@@ -53,7 +50,6 @@ For carrying on previous runing case, run the same command but with additional "
 
 Generated samples, log file and so on can be found in "../result/" folder.
 
----
 Dataset and pre-trained Inception Model will be automatically downloaded.
 
 The pre-trained CIFAR10 classifier, which is nesserrary for evaluating AM score, is provided in folder "pretrained_model".
