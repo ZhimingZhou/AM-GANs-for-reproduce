@@ -2,7 +2,7 @@
 
 This is a repository of the reproducible experiment code supporting the paper **Activation Maximization Generative Adversarial Nets**. We also provide a light weight implimentation of AM-GAN [here](https://github.com/ZhimingZhou/AM-GAN-clean-version).
 
-In "Activation Maximization Generative Adversarial Nets", we study how class labels influence GANs' training and proposed a advance method for better usage of class labels. It significantly outperforms the baseline methods, such as AC-GAN, improved GAN and CatGAN.
+In "Activation Maximization Generative Adversarial Nets", we thoroughly study how class labels influence GANs' training and proposed a advance method for better usage of class labels with theoretical insight. The proposed method AM-GAN, in experiments, significantly outperforms the baseline methods, including [AC-GAN](https://arxiv.org/abs/1610.09585), [Improved GAN](https://arxiv.org/abs/1606.03498) and [CatGAN](https://arxiv.org/abs/1511.06390).
 
 ---
 Note that the code is written in python 2.7 with tensorflow 1.2.0, please check your environment before running the code. (DO NOT use higher version tensorflow, such as 1.3, 1.4, 1.5; it currently has trouble with data dependent initialization that we used in the code for Weight Normalization) 
