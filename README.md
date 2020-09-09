@@ -4,7 +4,7 @@ This repo is for reproducing our results in [Activation Maximization Generative 
 
 We also provide a light weight implimentation here: [AM-GANs-refactored](https://github.com/ZhimingZhou/AM-GANs-refactored).
 
----
+--
 Note that the code is written in python 2.7 with tensorflow 1.2.0, please check your environment before running the code. 
 
 DO NOT use higher version tensorflow, such as 1.3, 1.4, 1.5; it currently has trouble with data dependent initialization that we used in the code for Weight Normalization. 
@@ -45,7 +45,7 @@ You may also need to install Pillow, scipy, matplotlib.
     For higher Inception Score, you can increase the capacity of D (or both G and D). For example:
     CUDA_VISIBLE_DEVICES="0" python main.py --LAB True --AC True --iFilterDimD 192 (--iFilterDimG 256) --sResultTag AM_GAN_enhanced
 
----
+--
 "sResultTag" will be part of the result folder name. CUDA_VISIBLE_DEVICES="x" controls the idx of GPU that to be use for current running case.
 
 It will evalutate and log the Inception score and AM score every 10,000 iterations. It usually requires 24-48 hours on a single GeForce GTX 1080TI.
