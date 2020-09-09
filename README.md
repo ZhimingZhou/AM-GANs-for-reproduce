@@ -6,7 +6,7 @@ We also provide a light weight implimentation here: [AM-GANs-refactored](https:/
 
 Note that the code is written in python 2.7 with tensorflow 1.2.0, please check your environment before running the code. 
 
-DO NOT use higher version tensorflow, such as 1.3, 1.4, 1.5; it currently has trouble with data dependent initialization that we used in the code for Weight Normalization. 
+DO NOT use higher version tensorflow, it currently has trouble with data dependent initialization that we used in the code. 
 
 You may also need to install Pillow, scipy, matplotlib.
 
