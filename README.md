@@ -1,6 +1,6 @@
 ## Activation Maximization Generative Adversarial Nets
 
-This repo is for reproducing our results in [Activation Maximization Generative Adversarial Nets](https://arxiv.org/abs/1703.02000)**
+This repo is for reproducing our results in [Activation Maximization Generative Adversarial Nets](https://arxiv.org/abs/1703.02000).
 
 We also provide a light weight implimentation here: [AM-GANs-refactored](https://github.com/ZhimingZhou/AM-GANs-refactored).
 
