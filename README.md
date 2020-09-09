@@ -44,11 +44,17 @@ You may also need to install Pillow, scipy, matplotlib.
     For higher Inception Score, you can increase the capacity of D (or both G and D). For example:
     CUDA_VISIBLE_DEVICES="0" python main.py --LAB True --AC True --iFilterDimD 192 (--iFilterDimG 256) --sResultTag AM_GAN_enhanced
 
-"sResultTag" will be part of the result folder name. CUDA_VISIBLE_DEVICES="x" controls the idx of GPU that to be use for current running case.
+"sResultTag" will be part of the result folder name. 
 
-It will evalutate and log the Inception score and AM score every 10,000 iterations. It usually requires 24-48 hours on a single GeForce GTX 1080TI.
+CUDA_VISIBLE_DEVICES="x" controls the idx of GPU that to be use for current running case.
 
-For carrying on previous runing case, run the same command but with additional "--bLoadCheckpoint True". Checkpoint is saved every 1,000 iterations.
+It will evalutate and log the Inception score and AM score every 10,000 iterations. 
+
+It usually requires 24-48 hours on a single GeForce GTX 1080TI.
+
+For carrying on previous runing case, run the same command but with additional "--bLoadCheckpoint True". 
+
+Checkpoint is saved every 1,000 iterations.
 
 Generated samples, log file and so on can be found in "../result/" folder.
 
